@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Full Page Image</title>
+  <style>
+    :root {
+      /* Update to your image URL */
+      --image-url: url('home.jpg');
+    }
+
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+
+    /* Full-page container */
+    .page {
+      min-height: 100vh;
+      width: 100%;
+      background-image: var(--image-url);
+      background-size: cover;         /* scales to cover the viewport */
+      background-position: center;    /* keeps focal point centered */
+      background-repeat: no-repeat;   /* no tiling */
+    }
+
+    /* Optional: dark overlay for readability (remove if not needed) */
+    .overlay {
+      height: 100%;
+      background: rgba(0,0,0,0.25);
+      display: grid;
+      place-items: center;
+      color: white;
+      font: 600 1.25rem/1.4 system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+      text-align: center;
+      padding: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="overlay">
+      <!-- Optional caption -->
+      <div>Witnessed Achievement, Witnessed Injustice</div>
+    </div>
+  </div>
+</body>
+</html>
